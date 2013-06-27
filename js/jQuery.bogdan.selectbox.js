@@ -36,8 +36,8 @@
                 $(this).removeAttr('disabled');
             } else if (option == 'change' && value != null) {
                 $(this).find('option').removeAttr('selected');
+                $(this).val(value).change();
                 $(this).find('option[value="' + value + '"]').attr('selected', 'selected');
-                $(this).change();
             }
             
             $(this).next('div.bogdan-select-box').remove();

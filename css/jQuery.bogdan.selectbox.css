@@ -15,7 +15,7 @@
     height: 22px;
     position: relative;
     text-align: center;
-    padding: 8px 6px 0 0;
+    padding: 8px 15px 0 0;
     cursor: pointer;
     background: url("../images/select-arrows.png") no-repeat scroll right center transparent;
 }
