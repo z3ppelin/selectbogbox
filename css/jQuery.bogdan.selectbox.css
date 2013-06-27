@@ -1,0 +1,55 @@
+/**
+ * Bogdan Select Box css.
+ * @author      Bogdan Constantinescu <bogstar007@yahoo.com>
+ * @since       2013.06.25
+ */
+ 
+.bogdan-select-box {
+    background-color: #E6E6E6;
+    background-image: linear-gradient(to top, #E6E6E6, #FEFEFE);
+    border: 1px solid #CDCDCD;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.25);
+    font-family: 'HelveticaNeueLTStd-Bd',Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    height: 22px;
+    position: relative;
+    text-align: center;
+    padding: 8px 6px 0 0;
+    cursor: pointer;
+    background: url("../images/select-arrows.png") no-repeat scroll right center transparent;
+}
+.bogdan-select-box ul {
+    background-color: #fefefe;
+    border: solid 1px #CDCDCD;
+    list-style: none;
+    left: -1px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    z-index: 100;
+    overflow-y: auto; 
+    display: none;
+    font-size: 11px;
+    max-height: 200px;
+    width: 100%;
+}
+.bogdan-select-box ul li.selected {
+    font-weight: bold;
+}
+.bogdan-nice-select span {
+    display: block;
+    height: 30px;
+    line-height: 35px;
+    outline: medium none;
+    padding: 0 7px;
+    overflow: hidden;
+}
+.bogdan-select-box ul li.hover{
+    background-color: #E6E6E6;
+}
+.bsbDisabled {
+    background-color: #3C3C3C;
+    border: 1px solid #515151;
+}

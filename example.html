@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example - Bogdan Selectbox</title>
+        <link rel="stylesheet" type="text/css" href="css/jQuery.bogdan.selectbox.css" media="all" />
+        <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="js/jQuery.bogdan.selectbox.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('select').selectbogbox();
+            });
+            
+            function disableSelect(strSelectId) {
+                $('#' + strSelectId).selectbogbox('disable');
+            }
+            
+            function enableSelect(strSelectId) {
+                $('#' + strSelectId).selectbogbox('enable');
+            }
+            function changeSelectValueTo10(strSelectId) {
+                $('#' + strSelectId).selectbogbox('change', 10);
+            }
+            
+        </script>
+    </head>
+
+    <body>
+        <select name="select1" id="select1">
+            <option value="1">One big cow</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five</option>
+            <option value="6">Six</option> 
+            <option value="7">Seven</option>
+            <option value="8">Eight</option>
+            <option value="9">Nine</option>
+            <option value="10">Ten</option>
+            <option value="11">Eleven</option>
+            <option value="12">Twelve</option>
+        </select>
+        <button type="button" onclick="disableSelect('select1')">Disable first select</button>
+        <button type="button" onclick="enableSelect('select1')">Enable first select</button>
+        <br /><br />
+        <select name="select2" id="select2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">4</option>
+            <option value="6">6</option> 
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+        </select>
+        <button type="button" onclick="disableSelect('select2')">Disable second select</button>
+        <button type="button" onclick="enableSelect('select2')">Enable second select</button>
+        <button type="button" onclick="changeSelectValueTo10('select2')">Change second select value to 10</button>
+    </body>
+
+</html>
